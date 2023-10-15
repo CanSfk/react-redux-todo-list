@@ -10,14 +10,14 @@ export default function AddTodo() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTodo({ title: value, userId: user.id, id: nanoid() });
+    addTodo({ title: value, userId: user.id, id: nanoid(), done: false });
     setValue("");
   };
 
   return (
     <form
       action="#"
-      className="grid gap-5 w-max px-4 py-3 rounded-md bg-slate-600"
+      className="grid gap-5 w-max px-4 py-3 rounded-md bg-slate-600 h-max"
     >
       <h2 className="select-none text-2xl font-semibold text-green-300 text-center">
         Add Todo Form

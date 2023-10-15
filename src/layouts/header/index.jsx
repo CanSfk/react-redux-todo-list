@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <div className="border-b border-slate-600 px-10 py-5 flex items-center justify-between">
-      <h1 className="text-4xl font-bold text-slate-300">Login</h1>
+      <h1 className="text-4xl font-bold text-slate-300">Todo List</h1>
       <div className="flex items-center gap-4">
         <button
           onClick={() => setUser({ id: 1, name: "Can-1" })}
@@ -18,7 +18,7 @@ export default function Header() {
             }
           )}
         >
-          Can-1
+          Login Can-1
         </button>
         <button
           onClick={() => setUser({ id: 2, name: "Can-2" })}
@@ -29,7 +29,7 @@ export default function Header() {
             }
           )}
         >
-          Can-2
+          Login Can-2
         </button>
         <button
           onClick={() => setUser({ id: false, name: false })}
